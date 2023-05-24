@@ -18,8 +18,6 @@ class ViewController: UIViewController {
         tableView.separatorStyle = .none
         tableView.register(NavigationCell.self, forCellReuseIdentifier: "navigationCell")
         tableView.frame = view.bounds
-        
-        title = "Avatar"
         navigationController?.navigationBar.prefersLargeTitles = false
     }
 
@@ -34,8 +32,11 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        print("Test1  scrollView.contentInset.top \(scrollView.contentInset.top)")
-        scrollView.contentInset.top
+        if scrollView.contentOffset.y > -44 {
+            title = "Avatar"
+        } else {
+            title = ""
+        }
     }
     
 }

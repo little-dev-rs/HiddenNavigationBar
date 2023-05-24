@@ -8,7 +8,7 @@ import TinyConstraints
 
 class NavigationCell: UITableViewCell {
 
-    var navigationLabel: UILabel = {
+    private var navigationLabel: UILabel = {
         let label = UILabel()
         label.numberOfLines = 1
         label.font = UIFont.systemFont(ofSize: 36, weight: .bold)
@@ -18,7 +18,7 @@ class NavigationCell: UITableViewCell {
         return label
     }()
     
-    var checkMarkImage: UIImageView = {
+    private var avatarImage: UIImageView = {
         let imageView = UIImageView()
         let image = UIImage(systemName: "person.crop.circle.fill") ?? UIImage()
         imageView.image = image.withTintColor(.gray, renderingMode: .alwaysOriginal)
@@ -43,11 +43,11 @@ class NavigationCell: UITableViewCell {
         navigationLabel.heightToSuperview()
         navigationLabel.centerYToSuperview()
         
-        contentView.addSubview(checkMarkImage)
-        checkMarkImage.width(36)
-        checkMarkImage.height(36)
-        checkMarkImage.trailingToSuperview(offset: 20)
-        checkMarkImage.centerYToSuperview()
+        contentView.addSubview(avatarImage)
+        avatarImage.width(36)
+        avatarImage.height(36)
+        avatarImage.trailingToSuperview(offset: 20)
+        avatarImage.centerYToSuperview()
     }
     
 }
