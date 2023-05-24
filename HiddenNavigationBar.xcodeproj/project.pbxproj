@@ -13,6 +13,8 @@
 		7063B9A52A1E42C400948ED1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7063B9A32A1E42C400948ED1 /* Main.storyboard */; };
 		7063B9A72A1E42C500948ED1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7063B9A62A1E42C500948ED1 /* Assets.xcassets */; };
 		7063B9AA2A1E42C500948ED1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7063B9A82A1E42C500948ED1 /* LaunchScreen.storyboard */; };
+		7063B9B22A1E5DE100948ED1 /* NavigationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7063B9B12A1E5DE100948ED1 /* NavigationCell.swift */; };
+		809B16E130A212BBC1808499 /* Pods_HiddenNavigationBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91F05D1206FDF9376A5C6CCE /* Pods_HiddenNavigationBar.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		7063B9A62A1E42C500948ED1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7063B9A92A1E42C500948ED1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7063B9AB2A1E42C500948ED1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7063B9B12A1E5DE100948ED1 /* NavigationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCell.swift; sourceTree = "<group>"; };
+		82B0A6943ACFB4BC1D0BBB51 /* Pods-HiddenNavigationBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiddenNavigationBar.release.xcconfig"; path = "Target Support Files/Pods-HiddenNavigationBar/Pods-HiddenNavigationBar.release.xcconfig"; sourceTree = "<group>"; };
+		91F05D1206FDF9376A5C6CCE /* Pods_HiddenNavigationBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiddenNavigationBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6665AC153B7238BDE366169 /* Pods-HiddenNavigationBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiddenNavigationBar.debug.xcconfig"; path = "Target Support Files/Pods-HiddenNavigationBar/Pods-HiddenNavigationBar.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				809B16E130A212BBC1808499 /* Pods_HiddenNavigationBar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				7063B99C2A1E42C400948ED1 /* HiddenNavigationBar */,
 				7063B99B2A1E42C400948ED1 /* Products */,
+				B9A1638E40587546FCCE8442 /* Pods */,
+				7B5D1AF6D2B46A6276A6A592 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +68,30 @@
 				7063B99D2A1E42C400948ED1 /* AppDelegate.swift */,
 				7063B99F2A1E42C400948ED1 /* SceneDelegate.swift */,
 				7063B9A12A1E42C400948ED1 /* ViewController.swift */,
+				7063B9B12A1E5DE100948ED1 /* NavigationCell.swift */,
 				7063B9A32A1E42C400948ED1 /* Main.storyboard */,
 				7063B9A62A1E42C500948ED1 /* Assets.xcassets */,
 				7063B9A82A1E42C500948ED1 /* LaunchScreen.storyboard */,
 				7063B9AB2A1E42C500948ED1 /* Info.plist */,
 			);
 			path = HiddenNavigationBar;
+			sourceTree = "<group>";
+		};
+		7B5D1AF6D2B46A6276A6A592 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91F05D1206FDF9376A5C6CCE /* Pods_HiddenNavigationBar.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B9A1638E40587546FCCE8442 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A6665AC153B7238BDE366169 /* Pods-HiddenNavigationBar.debug.xcconfig */,
+				82B0A6943ACFB4BC1D0BBB51 /* Pods-HiddenNavigationBar.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7063B9AE2A1E42C500948ED1 /* Build configuration list for PBXNativeTarget "HiddenNavigationBar" */;
 			buildPhases = (
+				38208B8FF04C247F18AA672B /* [CP] Check Pods Manifest.lock */,
 				7063B9962A1E42C400948ED1 /* Sources */,
 				7063B9972A1E42C400948ED1 /* Frameworks */,
 				7063B9982A1E42C400948ED1 /* Resources */,
+				E9D06C9800CBF71CC2AC937D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +162,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		38208B8FF04C247F18AA672B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HiddenNavigationBar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9D06C9800CBF71CC2AC937D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HiddenNavigationBar/Pods-HiddenNavigationBar-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HiddenNavigationBar/Pods-HiddenNavigationBar-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HiddenNavigationBar/Pods-HiddenNavigationBar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7063B9962A1E42C400948ED1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7063B9A22A1E42C400948ED1 /* ViewController.swift in Sources */,
+				7063B9B22A1E5DE100948ED1 /* NavigationCell.swift in Sources */,
 				7063B99E2A1E42C400948ED1 /* AppDelegate.swift in Sources */,
 				7063B9A02A1E42C400948ED1 /* SceneDelegate.swift in Sources */,
 			);
@@ -282,11 +354,13 @@
 		};
 		7063B9AF2A1E42C500948ED1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6665AC153B7238BDE366169 /* Pods-HiddenNavigationBar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HiddenNavigationBar/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -301,6 +375,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sunny.HiddenNavigationBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -309,11 +384,13 @@
 		};
 		7063B9B02A1E42C500948ED1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82B0A6943ACFB4BC1D0BBB51 /* Pods-HiddenNavigationBar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HiddenNavigationBar/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -328,6 +405,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sunny.HiddenNavigationBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
